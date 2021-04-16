@@ -1,0 +1,154 @@
+.textPrin{
+    font-size: 3.5rem;
+    color: #2977c9;
+}
+.imgPrin{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120%;
+}
+.campoGris{
+    background:rgba(0,0,0,0.08);
+    height: 435px;
+}
+.inputSearch{
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    border:1px solid #e1e9ee;
+    background-color: #eef3f8;
+    border-radius: 3px;
+    padding: 10px 8px 10px 40px;
+}
+input:focus{
+    outline:none;
+}
+.iconSearch{
+    position: absolute;
+    left: 10px;
+    top: 20%;
+}
+.menu ul{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.menu ul li .link{
+    min-width: 80px;
+    min-height: 52px;
+    padding: 2px 8px;
+    color:rgba(0,0,0,0.6);
+    border:none;
+    background:transparent;
+    border-bottom: 3px solid transparent;
+}
+.menu ul li .link.active{
+    border-bottom: 3px solid #000;
+    color:rgba(0,0,0);
+}
+.menu ul li .link:hover{
+    color:rgba(0,0,0);
+}
+.menuList{
+    transition: all 1s linear;
+    padding:15px 20px;
+    color: #7d7d7d;
+    font-size: 16px;
+    cursor: pointer;
+}
+.menuList.b{
+    color: #000;
+}
+.menuList:hover{
+    color: #FF441F;
+    background-color: rgba(255, 68, 31, 0.04);
+}
+.camBus{
+    max-width: 280px;
+}
+.navMobil{
+    display: none;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.bordeCampos{
+    box-shadow: 0px -1px 1px rgba(0,0,0,0.08), 1px 0px 1px rgba(0,0,0,0.08), -1px 0px 1px rgba(0,0,0,0.08),0px 1px 1px rgba(0,0,0,0.08);
+}
+@media (max-width:1500px) {
+    .imgPrin{
+        position: relative;
+        width: 100%;
+    }
+    .campoGris{
+        display: none;
+    }
+}
+@media (max-width:1200px) {
+    .cat2{
+        display: none !important;
+    }
+}
+@media (max-width:1080px) {
+    .textPrin{
+        font-size: 3rem;
+    }
+    .imgPrin{
+        position: relative;
+        width: 100%;
+    }
+    .campoGris{
+        display: none;
+    }
+}
+@media (max-width:790px) {
+    .textPrin{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .imgPrin{
+        position: relative;
+        width: 100%;
+    }
+    .campoGris{
+        display: none;
+    }
+    .cat1,.cat2{
+        display: none !important;
+    }
+    .camBus{
+        padding: 10px 0;
+        max-width: 100%;
+    }
+    .iconSearch{
+        top: 30%;
+    }
+    .navMobil{
+        display: block;
+    }
+}
+@media (max-width:600px) {
+    .textPrin{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .imgPrin{
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .campoGris{
+        display: none;
+    }
+}

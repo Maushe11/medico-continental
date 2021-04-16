@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Médico Continental</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <script src="css/font-awesome/js/all.js"></script>
+        <script src="js/script.js"></script>
+
+
+    </head>
+    <body>
+        <header class="bg-white position-fixed w-100" style="z-index: 12;">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between position-relative">
+                    <a href="" class="me-auto ps-2 pe-3" style="color:#2977c9;">
+                        <icon class="" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34 34" class="global-nav__logo">
+                                <title>
+                                  LinkedIn
+                                </title>
+                        
+                                <g>
+                        <!---->          <path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+                                </g>
+                              </svg>
+                        </icon>
+                    </a>
+                    <div style="flex-grow:1;">
+                        <div class="position-relative camBus" style="">
+                            <input type="text" class="inputSearch border-0" placeholder="Buscar">
+                            <span class="iconSearch"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="cat1">
+                                <a href="" class="link active d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-home"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Inicio
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Mi red
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Empleos
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Mensajes
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-bell"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Notificaciones
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <button href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Yo <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="cat1">
+                                <button href="" class="btnMostrar link d-flex justify-content-center align-items-center text-decoration-none border-start">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-th"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Productos <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                                
+                            </li>
+                            <li class="cat2">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none w-75">
+                                    <div class="text-center">
+                                        <span class="d-block position-relative">
+                                            Prueba Premium gratis durante 1 mes
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="navMobil">
+            <nav class="menu">
+                <ul class="w-100 d-inline-block text-center">
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-home"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Inicio
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Mi red
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Empleos
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Mensajes
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-bell"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Notificaciones
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <button href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Yo <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="d-inline-block">
+                        <button href="" class="p-0 btnMostrar link d-flex justify-content-center align-items-center text-decoration-none">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-th"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Productos <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </div>
+                        </button>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="campoFondo position-fixed" style="top:0;width: 100%;height: 100vh;z-index: 10;background: rgba(0,0,0,0.5);display: none;">
+            <div class="campoMenu position-absolute rounded bg-white d-flex justify-content-center flex-column" style="min-width: 25%;border:1px solid #c7c7c7;top: 10%;right: -1000px;transition: .5s;">
+                <div class="w-100">
+                    <div class="d-flex align-items-center justify-content-start flex-row position-relative m-3">
+                        <div class="position-relative ">
+                            <img src="https://profile-pics.rappi.com/uploads/application_users/default_profile_pic.jpg" style="width: 50px;">
+                        </div>
+                        <p class="p-2 fs-5 m-0 w-100 text-center">Hola, <b>Eduardo Piñas</b></p>
+                    </div>
+                </div>
+                <div class="w-100 pt-2 pb-2 d-flex align-items-center justify-content-start flex-row" style="background: linear-gradient(90deg, #e74349 0, #bf3358 35%, #771773 100%);">
+                    <img src="https://images.rappi.com/web/prime_logo-new.png?e=webp" style="width: 56px;margin: 10px;">
+                    <div class="w-100 mt-2 mb-2 ms-3 me-3 text-white fs-5">
+                        <p class="m-0">Ahorra con <b>RappiPrime</b></p>
+                        <b>No pagues mas costos de envío</b>
+                    </div>
+                </div>
+                <div class="w-100 p-4">
+                    <div>
+                        <p class="mb-2" style="color:#FF441F;font-size: 13px;">RappiCréditos disponibles</p>
+                        <div style="font-size: 16px;">S/ 0 RappiCréditos</div>
+                    </div>                    
+                </div>
+                <div class="w-100">
+                    <div class="menuList">Ajuste de cuenta</div>
+                    <div class="menuList">Pagos</div>
+                    <div class="menuList">Ingresar cupón</div>
+                    <div class="menuList">Centro de ayuda</div>
+                    <div class="menuList b">Cerrar sesión</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: rgba(0,0,0,0.15);height: 100vh;">
+            <div class="section pt-5">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-md-12" style="height: 50px;"></div>
+                        <div class="col-md-3">
+                            <div class="bg-white bordeCampos pb-4" style="border-radius: 15px;">
+                                <div class="position-relative">
+                                    <div class="w-100" style="background: rgba(0,0,0,0.2);height: 75px;border-radius: 15px 15px 0px 0;"></div>
+                                    <div class="position-absolute w-100 d-flex justify-content-center align-items-center" style="top:50%;">
+                                        <div class="rounded-pill" style="background:rgba(0,0,0,0.9);width: 76px;height: 76px;"></div>
+                                    </div>
+                                </div>
+                                <div class="pt-5 pb-4 border-bottom text-center">
+                                    <h4>¡Te damos la bienvenida, Mijail!</h4>
+                                    <a href="" class="text-decoration-none">Añade una foto</a>
+                                </div>
+                                <div class="p-4 d-flex justify-content-center align-items-baseline w-100 border-bottom">
+                                    <div style="vertical-align: baseline;">
+                                        <div>Contacto</div>
+                                        <div><b>Amplía tu red</b></div>
+                                    </div>
+                                    <div style="text-align:right;flex:1;">
+                                        <div>25</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="bg-white bordeCampos" style="height: 200px;border-radius: 15px;">
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-white bordeCampos" style="height: 200px;border-radius: 15px;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
