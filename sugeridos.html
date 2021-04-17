@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Médico Continental</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <script src="css/font-awesome/js/all.js"></script>
+        <script src="js/script.js"></script>
+
+
+    </head>
+    <body>
+        <header class="bg-white position-fixed w-100" style="z-index: 12;">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between position-relative">
+                    <a href="" class="me-auto ps-2 pe-3" style="color:#2977c9;">
+                        <icon class="" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34 34" class="global-nav__logo">
+                                <title>
+                                  LinkedIn
+                                </title>
+                        
+                                <g>
+                        <!---->          <path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+                                </g>
+                              </svg>
+                        </icon>
+                    </a>
+                    <div style="flex-grow:1;">
+                        <div class="position-relative camBus" style="">
+                            <input type="text" class="inputSearch border-0" placeholder="Buscar">
+                            <span class="iconSearch"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="cat1">
+                                <a href="" class="link active d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-home"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Inicio
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Mi red
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Empleos
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Mensajes
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-bell"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Notificaciones
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <button href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Yo <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="cat1">
+                                <button href="" class="btnMostrar link d-flex justify-content-center align-items-center text-decoration-none border-start">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-th"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Productos <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                                
+                            </li>
+                            <li class="cat2">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none w-75">
+                                    <div class="text-center">
+                                        <span class="d-block position-relative">
+                                            Prueba Premium gratis durante 1 mes
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="navMobil">
+            <nav class="menu">
+                <ul class="w-100 d-inline-block text-center">
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-home"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Inicio
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Mi red
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Empleos
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Mensajes
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-bell"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Notificaciones
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <button href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Yo <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="d-inline-block">
+                        <button href="" class="p-0 btnMostrar link d-flex justify-content-center align-items-center text-decoration-none">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-th"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Productos <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </div>
+                        </button>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="campoFondo position-fixed" style="top:0;width: 100%;height: 100vh;z-index: 10;background: rgba(0,0,0,0.5);display: none;">
+            <div class="campoMenu position-absolute rounded bg-white d-flex justify-content-center flex-column" style="min-width: 25%;border:1px solid #c7c7c7;top: 10%;right: -1000px;transition: .5s;">
+                <div class="w-100">
+                    <div class="d-flex align-items-center justify-content-start flex-row position-relative m-3">
+                        <div class="position-relative ">
+                            <img src="https://profile-pics.rappi.com/uploads/application_users/default_profile_pic.jpg" style="width: 50px;">
+                        </div>
+                        <p class="p-2 fs-5 m-0 w-100 text-center">Hola, <b>Eduardo Piñas</b></p>
+                    </div>
+                </div>
+                <div class="w-100 pt-2 pb-2 d-flex align-items-center justify-content-start flex-row" style="background: linear-gradient(90deg, #e74349 0, #bf3358 35%, #771773 100%);">
+                    <img src="https://images.rappi.com/web/prime_logo-new.png?e=webp" style="width: 56px;margin: 10px;">
+                    <div class="w-100 mt-2 mb-2 ms-3 me-3 text-white fs-5">
+                        <p class="m-0">Ahorra con <b>RappiPrime</b></p>
+                        <b>No pagues mas costos de envío</b>
+                    </div>
+                </div>
+                <div class="w-100 p-4">
+                    <div>
+                        <p class="mb-2" style="color:#FF441F;font-size: 13px;">RappiCréditos disponibles</p>
+                        <div style="font-size: 16px;">S/ 0 RappiCréditos</div>
+                    </div>                    
+                </div>
+                <div class="w-100">
+                    <div class="menuList">Ajuste de cuenta</div>
+                    <div class="menuList">Pagos</div>
+                    <div class="menuList">Ingresar cupón</div>
+                    <div class="menuList">Centro de ayuda</div>
+                    <div class="menuList b">Cerrar sesión</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: rgba(0,0,0,0.15);height: 100vh;">
+            <div class="section pt-5">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-md-12" style="height: 10px;"></div>
+                        <div class="col-md-4 resOcul">
+                            <div class="bg-white bordeCamposmb-2" style="border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                <section>
+                                    <div class="pt-3 pb-3">
+                                        <h5 class="ms-3 me-3">Gestionar mi red</h5>
+                                        <div class="">
+                                            <div class="hover d-flex p-3 pt-2 pb-2">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-5" style="flex:1;height: 24px;color:rgba(0,0,0,0.6)">
+                                                    <div class="d-flex" style="flex:1;">
+                                                        <div class="d-flex align-items-center" style="flex:1;">
+                                                            <span class="d-flex justify-content-center overflow-hidden position-relative me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <span>Contacto</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        1
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="hover d-flex p-3 pt-2 pb-2">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-5" style="flex:1;height: 24px;color:rgba(0,0,0,0.6)">
+                                                    <div class="d-flex" style="flex:1;">
+                                                        <div class="d-flex align-items-center" style="flex:1;">
+                                                            <span class="d-flex justify-content-center overflow-hidden position-relative me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                                                    <path d="M16 15h-6a3.24 3.24 0 011.79-2.89L12 12h2l.21.11A3.24 3.24 0 0116 15zm-3-7a2 2 0 00-2 2 2 2 0 002 2 2 2 0 002-2 2 2 0 00-2-2zm8-4v16a2 2 0 01-2 2H5v-3H3v-2h2v-4H3v-2h2V7H3V5h2V2h14a2 2 0 012 2zm-2 0H7v16h12V4z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <span>Contactos</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="hover d-flex p-3 pt-2 pb-2">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-5" style="flex:1;height: 24px;color:rgba(0,0,0,0.6)">
+                                                    <div class="d-flex" style="flex:1;">
+                                                        <div class="d-flex align-items-center" style="flex:1;">
+                                                            <span class="d-flex justify-content-center overflow-hidden position-relative me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                                                    <path d="M12 2h-.94a10 10 0 00-7.78 14.88L2.1 21a.72.72 0 00.69.92h.2l4.12-1.17A10 10 0 0012 22a10.32 10.32 0 001.57-.12A10 10 0 0012 2zm1.28 18a8.48 8.48 0 01-1.28.1 8.11 8.11 0 01-3-.59L11 18v-1.18a3 3 0 001 .18 3 3 0 001-.18V18l2 1.53a7.81 7.81 0 01-1.72.47zM10 11.16V9.85a2 2 0 014 0v1.3a6 6 0 01-.71 2.85l-.29.6a1 1 0 01-.88.53h-.2a1 1 0 01-.92-.53l-.29-.6a6 6 0 01-.71-2.84zm10.09 1.61a8.15 8.15 0 01-3.16 5.68L15 17v-2.17A8 8 0 0016 11v-1a4 4 0 00-8 0v1a8 8 0 001 3.86V17l-2.65 2-1.87.53.6-2.13.21-.75-.38-.65a8.12 8.12 0 016.32-12.09H12a8.13 8.13 0 018.09 8.86z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <span>Gente que sigo</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="hover d-flex p-3 pt-2 pb-2">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-5" style="flex:1;height: 24px;color:rgba(0,0,0,0.6)">
+                                                    <div class="d-flex" style="flex:1;">
+                                                        <div class="d-flex align-items-center" style="flex:1;">
+                                                            <span class="d-flex justify-content-center overflow-hidden position-relative me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <span>Evento</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="hover d-flex p-3 pt-2 pb-2">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-5" style="flex:1;height: 24px;color:rgba(0,0,0,0.6)">
+                                                    <div class="d-flex" style="flex:1;">
+                                                        <div class="d-flex align-items-center" style="flex:1;">
+                                                            <span class="d-flex justify-content-center overflow-hidden position-relative me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M4 2v20h16V2zm14 18h-4v-2h-4v2H6V4h12zm-7-8H8v-2h3zm0 4H8v-2h3zm5-4h-3v-2h3zm-5-4H8V6h3zm5 0h-3V6h3zm0 8h-3v-2h3z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <span>Páginas</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="hover d-flex p-3 pt-2 pb-2">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-5" style="flex:1;height: 24px;color:rgba(0,0,0,0.6)">
+                                                    <div class="d-flex" style="flex:1;">
+                                                        <div class="d-flex align-items-center" style="flex:1;">
+                                                            <span class="d-flex justify-content-center overflow-hidden position-relative me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M13 13h5v1h-5zm5-5H6v3h12zm-5 8h5v-1h-5zm9-12v13a3 3 0 01-3 3H5a3 3 0 01-3-3V4zm-2 2H4v11a1 1 0 001 1h14a1 1 0 001-1zm-9 7H6v3h5z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <span>Newsletters</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="hover d-flex p-3 pt-2 pb-2">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-5" style="flex:1;height: 24px;color:rgba(0,0,0,0.6)">
+                                                    <div class="d-flex" style="flex:1;">
+                                                        <div class="d-flex align-items-center" style="flex:1;">
+                                                            <span class="d-flex justify-content-center overflow-hidden position-relative me-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M21 10V8h-4.56L17 3h-2l-.56 5h-4L11 3H9l-.56 5H3v2h5.22l-.44 4H3v2h4.56L7 21h2l.56-5h4L13 21h2l.56-5H21v-2h-5.22l.44-4zm-7.22 4h-4l.44-4h4z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <span>Hashtags</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ps-2">
+                                                        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 wTotal">
+                            <div class="bg-white bordeCampos p-4 mb-2 position-relative" style="border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
