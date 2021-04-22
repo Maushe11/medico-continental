@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Médico Continental</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <script src="css/font-awesome/js/all.js"></script>
+        <script src="js/script.js"></script>
+
+
+    </head>
+    <body>
+        <header class="bg-white position-fixed w-100" style="z-index: 12;">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between position-relative">
+                    <a href="index.html" class="me-auto ps-2 pe-3" style="color:#2977c9;">
+                        <icon class="" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34 34" class="global-nav__logo">
+                                <title>
+                                  LinkedIn
+                                </title>
+                        
+                                <g>
+                        <!---->          <path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+                                </g>
+                              </svg>
+                        </icon>
+                    </a>
+                    <div style="flex-grow:1;">
+                        <div class="position-relative camBus" style="">
+                            <input type="text" class="inputSearch border-0" placeholder="Buscar">
+                            <span class="iconSearch"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="cat1">
+                                <a href="home.html" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-home"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Inicio
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="sugeridos.html" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Mi red
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="buscar-medico.html" class="link active d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Empleos
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Mensajes
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-bell"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Notificaciones
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <button href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Yo <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="cat1">
+                                <button href="" class="btnMostrar link d-flex justify-content-center align-items-center text-decoration-none border-start">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-th"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Productos <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                                
+                            </li>
+                            <li class="cat2">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none w-75">
+                                    <div class="text-center">
+                                        <span class="d-block position-relative">
+                                            Prueba Premium gratis durante 1 mes
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="navMobil">
+            <nav class="menu">
+                <ul class="w-100 d-inline-block text-center">
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-home"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Inicio
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Mi red
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Empleos
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Mensajes
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-bell"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Notificaciones
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <button href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Yo <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="d-inline-block">
+                        <button href="" class="p-0 btnMostrar link d-flex justify-content-center align-items-center text-decoration-none">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-th"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Productos <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </div>
+                        </button>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="campoFondo position-fixed" style="top:0;width: 100%;height: 100vh;z-index: 10;background: rgba(0,0,0,0.5);display: none;">
+            <div class="campoMenu position-absolute rounded bg-white d-flex justify-content-center flex-column" style="min-width: 25%;border:1px solid #c7c7c7;top: 10%;right: -1000px;transition: .5s;">
+                <div class="w-100">
+                    <div class="d-flex align-items-center justify-content-start flex-row position-relative m-3">
+                        <div class="position-relative ">
+                            <img src="https://profile-pics.rappi.com/uploads/application_users/default_profile_pic.jpg" style="width: 50px;">
+                        </div>
+                        <p class="p-2 fs-5 m-0 w-100 text-center">Hola, <b>Eduardo Piñas</b></p>
+                    </div>
+                </div>
+                <div class="w-100 pt-2 pb-2 d-flex align-items-center justify-content-start flex-row" style="background: linear-gradient(90deg, #e74349 0, #bf3358 35%, #771773 100%);">
+                    <img src="https://images.rappi.com/web/prime_logo-new.png?e=webp" style="width: 56px;margin: 10px;">
+                    <div class="w-100 mt-2 mb-2 ms-3 me-3 text-white fs-5">
+                        <p class="m-0">Ahorra con <b>RappiPrime</b></p>
+                        <b>No pagues mas costos de envío</b>
+                    </div>
+                </div>
+                <div class="w-100 p-4">
+                    <div>
+                        <p class="mb-2" style="color:#FF441F;font-size: 13px;">RappiCréditos disponibles</p>
+                        <div style="font-size: 16px;">S/ 0 RappiCréditos</div>
+                    </div>                    
+                </div>
+                <div class="w-100">
+                    <div class="menuList">Ajuste de cuenta</div>
+                    <div class="menuList">Pagos</div>
+                    <div class="menuList">Ingresar cupón</div>
+                    <div class="menuList">Centro de ayuda</div>
+                    <div class="menuList b">Cerrar sesión</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: rgba(0,0,0,0.15);">
+            <div class="section pt-5">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-md-12" style="height: 10px;"></div>
+                        
+                        <div class="col-md-12 col-sm-12 wTotal m-res">
+                            <div class="bg-white bordeCampos p-2 mb-2 position-relative d-flex" style="border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                <div class="overflow-visible d-flex">
+                                    <div class="d-inline-flex">
+                                        <ul class="list-unstyled d-flex p-0 m-0">
+                                            <li class="d-flex ps-3 pe-3" style="">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-6 fw-500">
+                                                    <div class="pe-2" style="color:rgba(0,0,0,0.6)">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                            <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span style="color:rgba(0,0,0,0.6)">
+                                                        Mis anuncios de empleo
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="d-flex ps-3 pe-3" style="color:rgba(0,0,0,0.6);border-left:1px solid rgba(0,0,0,.15);">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-6 fw-500">
+                                                    <div class="pe-2" style="color:rgba(0,0,0,0.6)">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                            <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span style="color:rgba(0,0,0,0.6)">
+                                                        Alertas de empleo
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="d-flex ps-3 pe-3" style="color:rgba(0,0,0,0.6);border-left:1px solid rgba(0,0,0,.15);">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-6 fw-500">
+                                                    <div class="pe-2" style="color:rgba(0,0,0,0.6)">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                                            <path d="M12 9.88A2.13 2.13 0 119.88 12 2.13 2.13 0 0112 9.88M12 9a3 3 0 103 3 3 3 0 00-3-3zm9-4H3a1 1 0 00-1 1v12a1 1 0 001 1h18a1 1 0 001-1V6a1 1 0 00-1-1zM4 7h2.13A2.13 2.13 0 014 9.13V7zm0 10v-2.12A2.13 2.13 0 016.13 17H4zm16 0h-2.12A2.13 2.13 0 0120 14.88V17zm0-3a3 3 0 00-3 3H7a3 3 0 00-3-3v-4a3 3 0 003-3h10a3 3 0 003 3v4zm0-4.87A2.13 2.13 0 0117.88 7H20v2.13z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span style="color:rgba(0,0,0,0.6)">
+                                                        Sueldo
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="d-flex ps-3 pe-3" style="color:rgba(0,0,0,0.6);border-left:1px solid rgba(0,0,0,.15);">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-6 fw-500">
+                                                    <div class="pe-2" style="color:rgba(0,0,0,0.6)">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                            <path d="M14.73 10H17l-5.5 8L8 14.5l1.34-1.34L11.21 15zM20 3v16a3 3 0 01-3 3H7a3 3 0 01-3-3V3h5.69l.52-1A2 2 0 0112 1a2 2 0 011.76 1l.52 1zm-2 2h-2.6l.6 1.1V7H8v-.9L8.6 5H6v14a1 1 0 001 1h10a1 1 0 001-1z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span style="color:rgba(0,0,0,0.6)">
+                                                        Evaluaciones de aptitudes
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="d-flex ps-3 pe-3" style="color:rgba(0,0,0,0.6);border-left:1px solid rgba(0,0,0,.15);">
+                                                <a href="" class="d-flex align-items-center text-decoration-none fs-6 fw-500">
+                                                    <div class="pe-2" style="color:rgba(0,0,0,0.6)">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                            <path d="M9.18 2l-4.3 2.52L6.22 8l-.52.91-3.7.55v5l3.64.54.54.93-1.34 3.53L9.14 22l2.29-2.9h1.09l2.3 2.9 4.32-2.52L17.79 16l.53-.93 3.68-.53v-5L18.32 9l-.51-.9 1.36-3.51L14.86 2l-2.33 3h-1zM12 9a3 3 0 11-3 3 3 3 0 013-3z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <span style="color:rgba(0,0,0,0.6)">
+                                                        Configuración de las solicitudes de empleo
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-inline-flex justify-content-end">
+                                        <a href="" id="btnAnuncia" class=" d-inline-flex justify-content-center align-items-center text-center text-decoration-none fw-600">
+                                            <span class="">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                                    <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
+                                                </svg>
+                                            </span>
+                                            <span>Anunciar gratis</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bordeCampos p-4 mb-2 position-relative" style="background:#dce6f1;border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                <h4 class="text-center fw-200 pb-4">Encuentra tu siguiente empleo</h4>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="position-relative" style="">
+                                            <input type="text" class="inputSearch border-0 w-100" style="border-radius:8px;" placeholder="Buscar por cargo, aptitud o empresa">
+                                            <span class="iconSearch"><i class="fas fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="position-relative">
+                                            <input type="text" class="inputSearch border-0 w-100" style="border-radius:8px;" placeholder="Ciudad, provincia o código postal">
+                                            <span class="iconSearch"><i class="fas fa-map-marker-alt"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="h-100 d-flex justify-content-center align-items-center">
+                                            <button class="btnBuscar w-100 fw-600 text-white">
+                                                Buscar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white bordeCampos position-relative p-3 mb-2 position-relative d-flex" style="border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                <div class="">
+                                    <h5 class="fw-400">Búsquedas de empleo sugeridas</h5>
+                                    <button class="btnX position-absolute p-0 border-0 rounded-pill">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                            <path d="M13.42 12L20 18.58 18.58 20 12 13.42 5.42 20 4 18.58 10.58 12 4 5.42 5.42 4 12 10.58 18.58 4 20 5.42z"></path>
+                                        </svg>
+                                    </button>
+                                    <div>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                        <a href="" class="linkBus me-1 mb-2 p-2 pt-1 pb-1 d-inline-flex text-decoration-none border-0 fw-600">
+                                            Desarrollador web
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white bordeCampos position-relative p-3 mb-2 position-relative d-flex" style="border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                <div class="d-flex overflow-visible ">
+                                    <button class="btnX position-absolute p-0 border-0 rounded-pill">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                            <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="me-2 mb-2">
+                                        <img src="img/none.png" class="rounded-pill" style="width: 65px;" />
+                                    </div>
+                                    <div class="d-flex flex-column" style="flex:1;">
+                                        <p class="mb-2">Prueba Premium para ver empleos con más posibilidades</p>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <ul class="d-flex m-0 me-2 list-unstyled">
+                                                <li class="position-relative rounded-pill" style="width: 30px;height: 30px;border:1px solid #fff;list-style-type:none;">
+                                                    <img src="https://media.licdn.com/media/AAUQAgE2AAgAAQAAAAAAAAhCAAAAJDBmNzFjMzUzLWFlNTAtNDRkZi1hNmZlLTljNjI0MzRlMmY4YQ.png" class="w-100 position-absolute rounded-pill" style="transform: translate(-50%, -50%);top:50%;left: 50%;">
+                                                </li>
+                                                <li class="position-relative rounded-pill" style="width: 30px;height: 30px;border:1px solid #fff;list-style-type:none;margin-left: -12px;">
+                                                    <img src="https://media.licdn.com/media/AAUQAgE2AAgAAQAAAAAAAAdKAAAAJDQ1YjQ5MTk5LTY2ZGUtNDI2MC05YmQ1LTE3YjE4ZWNlN2ZkYg.png" class="w-100 position-absolute rounded-pill" style="transform: translate(-50%, -50%);top:50%;left: 50%;">
+                                                </li>
+                                                <li class="position-relative rounded-pill" style="width: 30px;height: 30px;border:1px solid #fff;list-style-type:none;margin-left: -12px;">
+                                                    <img src="https://media.licdn.com/media/AAUQAgE2AAgAAQAAAAAAAAHzAAAAJGJiZDM1MGJkLTIzOTAtNDhmMS1hZTM5LTEzZDk2NWQ4ZDhjYQ.png" class="w-100 position-absolute rounded-pill" style="transform: translate(-50%, -50%);top:50%;left: 50%;">
+                                                </li>
+                                            </ul>
+                                            <span style="color:rgba(0,0,0,0.6);font-size: 13px;">
+                                                Prueba Premium para ver empleos con más posibilidades
+                                            </span>
+                                        </div>
+                                        <div class="p-0">
+                                            <a href="" class="btnSeguir2 p-3 pt-1 pb-1 text-center text-decoration-none d-inline-block rounded-pill fw-600" style="font-size: 17px;">
+                                                Pruébalo gratis durante 1 mes
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white bordeCampos p-4 mb-4 position-relative" style="border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                <div class="">
+                                    <div class=" align-items-center">
+                                        <h5 class="d-flex m-0 fw-600" style="flex:1;">
+                                            Recomendaciones
+                                        </h5>
+                                        <p class="m-0">Según tu perfil e historial de búsqueda</p>
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-md-3 col-sm-6 mt-3">
+                                            <div class="ps-1 pe-1 h-100">
+                                                <div class="hoverShadow d-flex flex-column bordeCampos h-100" style="border-radius: 10px;color: rgba(0,0,0,0.7);">
+                                                    <div class="d-flex flex-column align-items-stretch p-3" style="flex-grow:1;">
+                                                        <div class="d-block position-relative" style="flex:1;flex-grow: 1;height: 500px;">
+                                                            <button class="position-absolute fs-5 border-0 rounded-pill text-white" style="background:transparent;right:0;top:0;z-index: 7;width: 30px;height:30px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22zm-3-1a1 1 0 011 1v12.51L12 13l-5 4.51V4z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="d-block">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C510BAQHFDX7ubjE5YA/company-logo_100_100/0/1519949929590?e=1626912000&v=beta&t=oThMzXnfTS-vzQ9GmP4VVl7KvYyge_aKEbVLm1C8cRo" style="width: 72px;height: 72px;">
+                                                            </div>
+                                                            <div class="pt-1 pb-2">
+                                                                <p class="fw-600 mb-1">Programador Web Php</p>
+                                                                <p class="mb-0">DEVELOWEB</p>
+                                                                <p class="mb-0">Lima, Lima, Perú</p>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pt-3 list-unstyled d-flex position-relative" style="flex-wrap: wrap;flex-flow: wrap;">
+                                                            <div class="position-absolute" style="top: 30%;width: 25%;border-top: 1px solid #cdcfd2;"></div>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;">Hace 1 semana</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600 ps-1 pe-1" style="font-weight: 11px;">·</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;color:green;"> 11 solicitudes</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 mt-3">
+                                            <div class="ps-1 pe-1 h-100">
+                                                <div class="hoverShadow d-flex flex-column bordeCampos h-100" style="border-radius: 10px;color: rgba(0,0,0,0.7);">
+                                                    <div class="d-flex flex-column align-items-stretch p-3" style="flex-grow:1;">
+                                                        <div class="d-block position-relative" style="flex:1;flex-grow: 1;height: 500px;">
+                                                            <button class="position-absolute fs-5 border-0 rounded-pill text-white" style="background:transparent;right:0;top:0;z-index: 7;width: 30px;height:30px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22zm-3-1a1 1 0 011 1v12.51L12 13l-5 4.51V4z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="d-block">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFs4W-My210cg/company-logo_100_100/0/1593531433774?e=1626912000&v=beta&t=a6raXPnqM8B_ZBnz8QZW9zhkVGOQ0C3mC1r0vNTo2R8" style="width: 72px;height: 72px;">
+                                                            </div>
+                                                            <div class="pt-1 pb-5">
+                                                                <p class="fw-600 mb-1">Practicante de Aprendizaje y Desarrollo</p>
+                                                                <p class="mb-0">Laureate International Universities</p>
+                                                                <p class="mb-0">Lima, Lima, Perú</p>
+                                                            </div>
+                                                            <div class="mt-1">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#2f7b15" class="mercado-match" width="24" height="24" focusable="false">
+                                                                                <path d="M12 20a8 8 0 010-16 7.91 7.91 0 014.9 1.69l-1.43 1.42a6 6 0 101.42 1.42l3.82-3.82a1 1 0 000-1.41A1 1 0 0020 3a1 1 0 00-.7.29l-1 1A10 10 0 1022 12h-2a8 8 0 01-8 8zm5-8a5 5 0 11-5-5 4.93 4.93 0 012.76.82l-2.24 2.24A2.24 2.24 0 0012 10a2 2 0 102 2 2.24 2.24 0 00-.07-.51l2.24-2.24A5 5 0 0117 12z"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>
+                                                                            En busca de personal
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pt-3 list-unstyled d-flex position-relative" style="flex-wrap: wrap;flex-flow: wrap;">
+                                                            <div class="position-absolute" style="top: 30%;width: 25%;border-top: 1px solid #cdcfd2;"></div>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;">Hace 1 semana</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600 ps-1 pe-1" style="font-weight: 11px;">·</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;color:green;"> 11 solicitudes</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 mt-3">
+                                            <div class="ps-1 pe-1 h-100">
+                                                <div class="hoverShadow d-flex flex-column bordeCampos h-100" style="border-radius: 10px;color: rgba(0,0,0,0.7);">
+                                                    <div class="d-flex flex-column align-items-stretch p-3" style="flex-grow:1;">
+                                                        <div class="d-block position-relative" style="flex:1;flex-grow: 1;height: 500px;">
+                                                            <button class="position-absolute fs-5 border-0 rounded-pill text-white" style="background:transparent;right:0;top:0;z-index: 7;width: 30px;height:30px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22zm-3-1a1 1 0 011 1v12.51L12 13l-5 4.51V4z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="d-block">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFs4W-My210cg/company-logo_100_100/0/1593531433774?e=1626912000&v=beta&t=a6raXPnqM8B_ZBnz8QZW9zhkVGOQ0C3mC1r0vNTo2R8" style="width: 72px;height: 72px;">
+                                                            </div>
+                                                            <div class="pt-1 pb-5">
+                                                                <p class="fw-600 mb-1">Practicante de Aprendizaje y Desarrollo</p>
+                                                                <p class="mb-0">Laureate International Universities</p>
+                                                                <p class="mb-0">Lima, Lima, Perú</p>
+                                                            </div>
+                                                            <div class="mt-1">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#2f7b15" class="mercado-match" width="24" height="24" focusable="false">
+                                                                                <path d="M12 20a8 8 0 010-16 7.91 7.91 0 014.9 1.69l-1.43 1.42a6 6 0 101.42 1.42l3.82-3.82a1 1 0 000-1.41A1 1 0 0020 3a1 1 0 00-.7.29l-1 1A10 10 0 1022 12h-2a8 8 0 01-8 8zm5-8a5 5 0 11-5-5 4.93 4.93 0 012.76.82l-2.24 2.24A2.24 2.24 0 0012 10a2 2 0 102 2 2.24 2.24 0 00-.07-.51l2.24-2.24A5 5 0 0117 12z"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>
+                                                                            En busca de personal
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pt-3 list-unstyled d-flex position-relative" style="flex-wrap: wrap;flex-flow: wrap;">
+                                                            <div class="position-absolute" style="top: 30%;width: 25%;border-top: 1px solid #cdcfd2;"></div>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;">Hace 1 semana</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600 ps-1 pe-1" style="font-weight: 11px;">·</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;color:green;"> 11 solicitudes</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 mt-3">
+                                            <div class="ps-1 pe-1 h-100">
+                                                <div class="hoverShadow d-flex flex-column bordeCampos h-100" style="border-radius: 10px;color: rgba(0,0,0,0.7);">
+                                                    <div class="d-flex flex-column align-items-stretch p-3" style="flex-grow:1;">
+                                                        <div class="d-block position-relative" style="flex:1;flex-grow: 1;height: 500px;">
+                                                            <button class="position-absolute fs-5 border-0 rounded-pill text-white" style="background:transparent;right:0;top:0;z-index: 7;width: 30px;height:30px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22zm-3-1a1 1 0 011 1v12.51L12 13l-5 4.51V4z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="d-block">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFs4W-My210cg/company-logo_100_100/0/1593531433774?e=1626912000&v=beta&t=a6raXPnqM8B_ZBnz8QZW9zhkVGOQ0C3mC1r0vNTo2R8" style="width: 72px;height: 72px;">
+                                                            </div>
+                                                            <div class="pt-1 pb-5">
+                                                                <p class="fw-600 mb-1">Practicante de Aprendizaje y Desarrollo</p>
+                                                                <p class="mb-0">Laureate International Universities</p>
+                                                                <p class="mb-0">Lima, Lima, Perú</p>
+                                                            </div>
+                                                            <div class="mt-1">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#2f7b15" class="mercado-match" width="24" height="24" focusable="false">
+                                                                                <path d="M12 20a8 8 0 010-16 7.91 7.91 0 014.9 1.69l-1.43 1.42a6 6 0 101.42 1.42l3.82-3.82a1 1 0 000-1.41A1 1 0 0020 3a1 1 0 00-.7.29l-1 1A10 10 0 1022 12h-2a8 8 0 01-8 8zm5-8a5 5 0 11-5-5 4.93 4.93 0 012.76.82l-2.24 2.24A2.24 2.24 0 0012 10a2 2 0 102 2 2.24 2.24 0 00-.07-.51l2.24-2.24A5 5 0 0117 12z"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>
+                                                                            En busca de personal
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pt-3 list-unstyled d-flex position-relative" style="flex-wrap: wrap;flex-flow: wrap;">
+                                                            <div class="position-absolute" style="top: 30%;width: 25%;border-top: 1px solid #cdcfd2;"></div>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;">Hace 1 semana</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600 ps-1 pe-1" style="font-weight: 11px;">·</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;color:green;"> 11 solicitudes</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 mt-3">
+                                            <div class="ps-1 pe-1 h-100">
+                                                <div class="hoverShadow d-flex flex-column bordeCampos h-100" style="border-radius: 10px;color: rgba(0,0,0,0.7);">
+                                                    <div class="d-flex flex-column align-items-stretch p-3" style="flex-grow:1;">
+                                                        <div class="d-block position-relative" style="flex:1;flex-grow: 1;height: 500px;">
+                                                            <button class="position-absolute fs-5 border-0 rounded-pill text-white" style="background:transparent;right:0;top:0;z-index: 7;width: 30px;height:30px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22zm-3-1a1 1 0 011 1v12.51L12 13l-5 4.51V4z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="d-block">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFs4W-My210cg/company-logo_100_100/0/1593531433774?e=1626912000&v=beta&t=a6raXPnqM8B_ZBnz8QZW9zhkVGOQ0C3mC1r0vNTo2R8" style="width: 72px;height: 72px;">
+                                                            </div>
+                                                            <div class="pt-1 pb-5">
+                                                                <p class="fw-600 mb-1">Practicante de Aprendizaje y Desarrollo</p>
+                                                                <p class="mb-0">Laureate International Universities</p>
+                                                                <p class="mb-0">Lima, Lima, Perú</p>
+                                                            </div>
+                                                            <div class="mt-1">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#2f7b15" class="mercado-match" width="24" height="24" focusable="false">
+                                                                                <path d="M12 20a8 8 0 010-16 7.91 7.91 0 014.9 1.69l-1.43 1.42a6 6 0 101.42 1.42l3.82-3.82a1 1 0 000-1.41A1 1 0 0020 3a1 1 0 00-.7.29l-1 1A10 10 0 1022 12h-2a8 8 0 01-8 8zm5-8a5 5 0 11-5-5 4.93 4.93 0 012.76.82l-2.24 2.24A2.24 2.24 0 0012 10a2 2 0 102 2 2.24 2.24 0 00-.07-.51l2.24-2.24A5 5 0 0117 12z"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>
+                                                                            En busca de personal
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pt-3 list-unstyled d-flex position-relative" style="flex-wrap: wrap;flex-flow: wrap;">
+                                                            <div class="position-absolute" style="top: 30%;width: 25%;border-top: 1px solid #cdcfd2;"></div>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;">Hace 1 semana</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600 ps-1 pe-1" style="font-weight: 11px;">·</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;color:green;"> 11 solicitudes</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 mt-3">
+                                            <div class="ps-1 pe-1 h-100">
+                                                <div class="hoverShadow d-flex flex-column bordeCampos h-100" style="border-radius: 10px;color: rgba(0,0,0,0.7);">
+                                                    <div class="d-flex flex-column align-items-stretch p-3" style="flex-grow:1;">
+                                                        <div class="d-block position-relative" style="flex:1;flex-grow: 1;height: 500px;">
+                                                            <button class="position-absolute fs-5 border-0 rounded-pill text-white" style="background:transparent;right:0;top:0;z-index: 7;width: 30px;height:30px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22zm-3-1a1 1 0 011 1v12.51L12 13l-5 4.51V4z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="d-block">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFs4W-My210cg/company-logo_100_100/0/1593531433774?e=1626912000&v=beta&t=a6raXPnqM8B_ZBnz8QZW9zhkVGOQ0C3mC1r0vNTo2R8" style="width: 72px;height: 72px;">
+                                                            </div>
+                                                            <div class="pt-1 pb-5">
+                                                                <p class="fw-600 mb-1">Practicante de Aprendizaje y Desarrollo</p>
+                                                                <p class="mb-0">Laureate International Universities</p>
+                                                                <p class="mb-0">Lima, Lima, Perú</p>
+                                                            </div>
+                                                            <div class="mt-1">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#2f7b15" class="mercado-match" width="24" height="24" focusable="false">
+                                                                                <path d="M12 20a8 8 0 010-16 7.91 7.91 0 014.9 1.69l-1.43 1.42a6 6 0 101.42 1.42l3.82-3.82a1 1 0 000-1.41A1 1 0 0020 3a1 1 0 00-.7.29l-1 1A10 10 0 1022 12h-2a8 8 0 01-8 8zm5-8a5 5 0 11-5-5 4.93 4.93 0 012.76.82l-2.24 2.24A2.24 2.24 0 0012 10a2 2 0 102 2 2.24 2.24 0 00-.07-.51l2.24-2.24A5 5 0 0117 12z"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>
+                                                                            En busca de personal
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pt-3 list-unstyled d-flex position-relative" style="flex-wrap: wrap;flex-flow: wrap;">
+                                                            <div class="position-absolute" style="top: 30%;width: 25%;border-top: 1px solid #cdcfd2;"></div>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;">Hace 1 semana</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600 ps-1 pe-1" style="font-weight: 11px;">·</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;color:green;"> 11 solicitudes</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 mt-3">
+                                            <div class="ps-1 pe-1 h-100">
+                                                <div class="hoverShadow d-flex flex-column bordeCampos h-100" style="border-radius: 10px;color: rgba(0,0,0,0.7);">
+                                                    <div class="d-flex flex-column align-items-stretch p-3" style="flex-grow:1;">
+                                                        <div class="d-block position-relative" style="flex:1;flex-grow: 1;height: 500px;">
+                                                            <button class="position-absolute fs-5 border-0 rounded-pill text-white" style="background:transparent;right:0;top:0;z-index: 7;width: 30px;height:30px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22zm-3-1a1 1 0 011 1v12.51L12 13l-5 4.51V4z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="d-block">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFs4W-My210cg/company-logo_100_100/0/1593531433774?e=1626912000&v=beta&t=a6raXPnqM8B_ZBnz8QZW9zhkVGOQ0C3mC1r0vNTo2R8" style="width: 72px;height: 72px;">
+                                                            </div>
+                                                            <div class="pt-1 pb-5">
+                                                                <p class="fw-600 mb-1">Practicante de Aprendizaje y Desarrollo</p>
+                                                                <p class="mb-0">Laureate International Universities</p>
+                                                                <p class="mb-0">Lima, Lima, Perú</p>
+                                                            </div>
+                                                            <div class="mt-1">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#2f7b15" class="mercado-match" width="24" height="24" focusable="false">
+                                                                                <path d="M12 20a8 8 0 010-16 7.91 7.91 0 014.9 1.69l-1.43 1.42a6 6 0 101.42 1.42l3.82-3.82a1 1 0 000-1.41A1 1 0 0020 3a1 1 0 00-.7.29l-1 1A10 10 0 1022 12h-2a8 8 0 01-8 8zm5-8a5 5 0 11-5-5 4.93 4.93 0 012.76.82l-2.24 2.24A2.24 2.24 0 0012 10a2 2 0 102 2 2.24 2.24 0 00-.07-.51l2.24-2.24A5 5 0 0117 12z"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>
+                                                                            En busca de personal
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pt-3 list-unstyled d-flex position-relative" style="flex-wrap: wrap;flex-flow: wrap;">
+                                                            <div class="position-absolute" style="top: 30%;width: 25%;border-top: 1px solid #cdcfd2;"></div>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;">Hace 1 semana</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600 ps-1 pe-1" style="font-weight: 11px;">·</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;color:green;"> 11 solicitudes</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-6 mt-3">
+                                            <div class="ps-1 pe-1 h-100">
+                                                <div class="hoverShadow d-flex flex-column bordeCampos h-100" style="border-radius: 10px;color: rgba(0,0,0,0.7);">
+                                                    <div class="d-flex flex-column align-items-stretch p-3" style="flex-grow:1;">
+                                                        <div class="d-block position-relative" style="flex:1;flex-grow: 1;height: 500px;">
+                                                            <button class="position-absolute fs-5 border-0 rounded-pill text-white" style="background:transparent;right:0;top:0;z-index: 7;width: 30px;height:30px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M19 5a3 3 0 00-3-3H5v20l7-6.29L19 22zm-3-1a1 1 0 011 1v12.51L12 13l-5 4.51V4z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div class="d-block">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFs4W-My210cg/company-logo_100_100/0/1593531433774?e=1626912000&v=beta&t=a6raXPnqM8B_ZBnz8QZW9zhkVGOQ0C3mC1r0vNTo2R8" style="width: 72px;height: 72px;">
+                                                            </div>
+                                                            <div class="pt-1 pb-5">
+                                                                <p class="fw-600 mb-1">Practicante de Aprendizaje y Desarrollo</p>
+                                                                <p class="mb-0">Laureate International Universities</p>
+                                                                <p class="mb-0">Lima, Lima, Perú</p>
+                                                            </div>
+                                                            <div class="mt-1">
+                                                                <div>
+                                                                    <div class="d-flex align-items-center ">
+                                                                        <span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#2f7b15" class="mercado-match" width="24" height="24" focusable="false">
+                                                                                <path d="M12 20a8 8 0 010-16 7.91 7.91 0 014.9 1.69l-1.43 1.42a6 6 0 101.42 1.42l3.82-3.82a1 1 0 000-1.41A1 1 0 0020 3a1 1 0 00-.7.29l-1 1A10 10 0 1022 12h-2a8 8 0 01-8 8zm5-8a5 5 0 11-5-5 4.93 4.93 0 012.76.82l-2.24 2.24A2.24 2.24 0 0012 10a2 2 0 102 2 2.24 2.24 0 00-.07-.51l2.24-2.24A5 5 0 0117 12z"></path>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span>
+                                                                            En busca de personal
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="pt-3 list-unstyled d-flex position-relative" style="flex-wrap: wrap;flex-flow: wrap;">
+                                                            <div class="position-absolute" style="top: 30%;width: 25%;border-top: 1px solid #cdcfd2;"></div>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;">Hace 1 semana</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600 ps-1 pe-1" style="font-weight: 11px;">·</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="fw-600" style="font-weight: 11px;color:green;"> 11 solicitudes</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
