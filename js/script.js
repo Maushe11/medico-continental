@@ -18,6 +18,18 @@ $(document).ready(function(){
         setTimeout(function(){
             $(".campoFondo").css("display","none");
         },1000)
-    })
+    });
+
+    $(".btnTop").click(function(){
+        $(".btnBot").css("display","inline-flex");
+        $(".btnTop").css("display","none");
+        $(".campoChats").css("transform","translateY(0%)");
+    });
+
+    $(".btnBot").click(function(){
+        $(".btnTop").css("display","inline-flex");
+        $(".btnBot").css("display","none");
+        $(".campoChats").css("transform","translateY(100%) translateY(-48px)");
+    });
 
 })

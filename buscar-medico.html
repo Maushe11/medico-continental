@@ -20,7 +20,7 @@
 
     </head>
     <body>
-        <header class="bg-white position-fixed w-100" style="z-index: 12;">
+        <header class="bg-white position-fixed w-100" style="z-index: 1002;">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between position-relative">
                     <a href="index.html" class="me-auto ps-2 pe-3" style="color:#2977c9;">
@@ -81,7 +81,7 @@
                                 </a>
                             </li>
                             <li class="cat1">
-                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                <a href="mensajes.html" class="link d-flex justify-content-center align-items-center text-decoration-none ">
                                     <div class="text-center">
                                         <div class="d-block position-relative fs-3">
                                             <span class="icon"><i class="fas fa-comment-dots"></i></span>
@@ -235,7 +235,7 @@
             </nav>
         </div>
         
-        <div class="campoFondo position-fixed" style="top:0;width: 100%;height: 100vh;z-index: 10;background: rgba(0,0,0,0.5);display: none;">
+        <div class="campoFondo position-fixed" style="top:0;width: 100%;height: 100vh;z-index: 1001;background: rgba(0,0,0,0.5);display: none;">
             <div class="campoMenu position-absolute rounded bg-white d-flex justify-content-center flex-column" style="min-width: 25%;border:1px solid #c7c7c7;top: 10%;right: -1000px;transition: .5s;">
                 <div class="w-100">
                     <div class="d-flex align-items-center justify-content-start flex-row position-relative m-3">
@@ -868,6 +868,245 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="campoChats position-fixed bg-white" style="bottom: 0;right: 0;z-index: 1000;box-shadow: 0 4px 12px rgba(0,0,0,0.3);border-radius: 0.8rem 0.8rem 0 0;transform: translateY(100%) translateY(-48px);transition: linear .3s;">
+            <div class="d-flex flex-column" style="height: 50px;flex:0 0 288px;width: 288px;background: #fff;border-radius: 0.8rem 0.8rem 0 0;">
+                <div class="d-flex align-items-center justify-content-center position-relative" style="flex-direction:row;padding: 0 8px;min-height: 48px;cursor: pointer;background-clip:padding-box">
+                    <section class="d-flex position-relative" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-right:4px;padding: 4px 4px 4px 1px;">
+                        <div class="d-flex position-relative" style="width: 32px;height:32px;">
+                            <img src="img/none.png" class="w-100 rounded-pill" />
+                            <div class="position-absolute rounded-pill" style="background: #057642;bottom: 0;right:0;width: 8px; height:8px;"></div>
+                        </div>
+                        <button class="ms-2 border-0 p-0" style="background: transparent;">
+                            <h4 class="m-0" style="font-size: 15px;">Mensajes</h4>
+                        </button>
+                    </section>
+                    <section class="position-relative d-flex " style="margin-left:auto;flex-shrink:0;opacity: 1;vertical-align: baseline;">
+                        <button class="btnMen border-0 p-0 rounded-pill d-inline-flex align-items-center justify-content-center overflow-hidden">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="btnMen border-0 p-0 rounded-pill d-inline-flex align-items-center justify-content-center overflow-hidden">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="btnTop btnMen border-0 p-0 rounded-pill align-items-center justify-content-center overflow-hidden" style="display: inline-flex;">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="btnBot btnMen border-0 p-0 rounded-pill align-items-center justify-content-center overflow-hidden" style="display: none;">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </section>
+                </div>
+            </div>
+            <div class="d-block" style="background:#fff;border-top: 1px solid rgba(0,0,0,0.08);width: 288px;">
+                <div class="d-flex flex-column w-100">
+                    <div class="position-relative" style="margin: 8px 10px;">
+                        <input name="search" class="" style="border-radius:0.4rem;font-size: 0.9rem;width: 100%;border:none;padding: 4px 28px 4px 32px;background:#eef3f8;box-shadow: none;" placeholder="Buscar Mensaje" />
+                        <span class="position-absolute" style="left:7px;top:0px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="rgba(0,0,0,0.6)" class="mercado-match" width="16" height="16" focusable="false">
+                                <path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+                            </svg>
+                        </span>
+                        <div class="position-absolute" style="top:0px;right:10px;">
+                            <button class="border-0 p-0" style="background: transparent;">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="rgba(0,0,0,0.6)" width="16" height="16" focusable="false">
+                                        <path d="M15 2v2H6.72a2 2 0 01-3.44 0H1V2h2.28a2 2 0 013.44 0H15zm-4 4a2 2 0 00-1.72 1H1v2h8.28a2 2 0 003.45 0H15V7h-2.28A2 2 0 0011 6zm-6 5a2 2 0 00-1.72 1H1v2h2.28a2 2 0 003.45 0H15v-2H6.72A2 2 0 005 11z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="position-relative list-unstyled m-0" style="flex:1;overflow-y: auto;height: 60vh;">
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHqTpE6UpiZXQ/profile-displayphoto-shrink_100_100/0/1617738789972?e=1624492800&v=beta&t=h9XxuqmTiDfN6ToxQRcNdNYellNJLkIa415Y6AITKkc" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFx160ip6EdLQ/profile-displayphoto-shrink_100_100/0/1517621204885?e=1624492800&v=beta&t=Nyj-gl0LtceVUzvVjS7jpfVVu52wFfVEIwJFxIE4RXE" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">SONIA GOMEZ GUTIERREZ</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C560CAQHDkc6XVR3aeA/spinmail-customsender-displayphoto-shrink_100_100/0/1589235600844?e=1619301600&v=beta&t=t3A7MNov_pLe9RxHMJ9-UZ5teiFrkMHvtsAKeaDS5Dw" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C560CAQHDkc6XVR3aeA/spinmail-customsender-displayphoto-shrink_100_100/0/1589235600844?e=1619301600&v=beta&t=t3A7MNov_pLe9RxHMJ9-UZ5teiFrkMHvtsAKeaDS5Dw" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C560CAQHDkc6XVR3aeA/spinmail-customsender-displayphoto-shrink_100_100/0/1589235600844?e=1619301600&v=beta&t=t3A7MNov_pLe9RxHMJ9-UZ5teiFrkMHvtsAKeaDS5Dw" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C560CAQHDkc6XVR3aeA/spinmail-customsender-displayphoto-shrink_100_100/0/1589235600844?e=1619301600&v=beta&t=t3A7MNov_pLe9RxHMJ9-UZ5teiFrkMHvtsAKeaDS5Dw" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -242,6 +242,51 @@ input:focus{
     box-shadow: inset 0 0 0 2px rgba(0,0,0,0.3);
     color: rgba(0,0,0,0.6);
 }
+.btnMen{
+    width: 2.2rem;
+    height:3.2rem;
+    min-width: auto;
+    background: transparent;
+    color:rgba(0,0,0,0.6);
+    vertical-align:middle;
+    box-sizing:border-box;
+}
+.btnChat{
+    background: transparent;
+    padding-left: 12px;
+    color:rgba(0,0,0,0.6);
+}
+.btnChat:hover{
+    background: #eef3f8;
+    color:rgba(0,0,0,0.6);
+}
+.btnChat.active{
+    background: #eef3f8;
+    box-shadow: 4px 0 0 #057642 inset,0 -1px 0#f3f6f8 inset;
+}
+.ulList{
+    column-count:2;
+    column-gap:24px;
+    column-fill:balance;
+}
+.ulList li{
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    padding-top:16px;
+    list-style: none;
+}
+.ulList li a{
+    text-decoration: none;
+}
+.ulList li a:hover{
+    text-decoration: underline;
+}
+.listCampos li{
+    list-style: none;
+    padding: 20px 0;
+    box-shadow: #cdcfd2 0 0 0 inset, #cdcfd2 0 0 0 inset, #cdcfd2 0 -1px 0 inset, #cdcfd2 0 0 0 inset;
+}
 
 @media (max-width:1500px) {
     .imgPrin{

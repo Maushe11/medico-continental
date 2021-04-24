@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Médico Continental</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <script src="css/font-awesome/js/all.js"></script>
+        <script src="js/script.js"></script>
+
+
+    </head>
+    <body>
+        <header class="bg-white position-fixed w-100" style="z-index: 1002;">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between position-relative">
+                    <a href="index.html" class="me-auto ps-2 pe-3" style="color:#2977c9;">
+                        <icon class="" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34 34" class="global-nav__logo">
+                                <title>
+                                  LinkedIn
+                                </title>
+                        
+                                <g>
+                        <!---->          <path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+                                </g>
+                              </svg>
+                        </icon>
+                    </a>
+                    <div style="flex-grow:1;">
+                        <div class="position-relative camBus">
+                            <input type="text" class="inputSearch border-0" placeholder="Buscar">
+                            <span class="iconSearch"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="cat1">
+                                <a href="home.html" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-home"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Inicio
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="sugeridos.html" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Mi red
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="buscar-medico.html" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Empleos
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="mensajes.html" class="link active d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Mensajes
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-bell"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Notificaciones
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cat1">
+                                <button href="" class="link d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Yo <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="cat1">
+                                <button href="" class="btnMostrar link d-flex justify-content-center align-items-center text-decoration-none border-start">
+                                    <div class="text-center">
+                                        <div class="d-block position-relative fs-3">
+                                            <span class="icon"><i class="fas fa-th"></i></span>
+                                        </div>
+                                        <span class="text d-flex align-items-center ">
+                                            Productos <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                                
+                            </li>
+                            <li class="cat2">
+                                <a href="" class="link d-flex justify-content-center align-items-center text-decoration-none w-75">
+                                    <div class="text-center">
+                                        <span class="d-block position-relative">
+                                            Prueba Premium gratis durante 1 mes
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="navMobil">
+            <nav class="menu">
+                <ul class="w-100 d-inline-block text-center">
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-home"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Inicio
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Mi red
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Empleos
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Mensajes
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-bell"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Notificaciones
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <button href="" class="p-0 link d-flex justify-content-center align-items-center text-decoration-none ">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Yo <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="d-inline-block">
+                        <button href="" class="p-0 btnMostrar link d-flex justify-content-center align-items-center text-decoration-none">
+                            <div class="text-center">
+                                <div class="d-block position-relative fs-5">
+                                    <span class="icon"><i class="fas fa-th"></i></span>
+                                </div>
+                                <span class="text d-flex align-items-center ">
+                                    Productos <span class="ms-1"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </div>
+                        </button>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="campoFondo position-fixed" style="top:0;width: 100%;height: 100vh;z-index: 1001;background: rgba(0,0,0,0.5);display: none;">
+            <div class="campoMenu position-absolute rounded bg-white d-flex justify-content-center flex-column" style="min-width: 25%;border:1px solid #c7c7c7;top: 10%;right: -1000px;transition: .5s;">
+                <div class="w-100">
+                    <div class="d-flex align-items-center justify-content-start flex-row position-relative m-3">
+                        <div class="position-relative ">
+                            <img src="https://profile-pics.rappi.com/uploads/application_users/default_profile_pic.jpg" style="width: 50px;">
+                        </div>
+                        <p class="p-2 fs-5 m-0 w-100 text-center">Hola, <b>Eduardo Piñas</b></p>
+                    </div>
+                </div>
+                <div class="w-100 pt-2 pb-2 d-flex align-items-center justify-content-start flex-row" style="background: linear-gradient(90deg, #e74349 0, #bf3358 35%, #771773 100%);">
+                    <img src="https://images.rappi.com/web/prime_logo-new.png?e=webp" style="width: 56px;margin: 10px;">
+                    <div class="w-100 mt-2 mb-2 ms-3 me-3 text-white fs-5">
+                        <p class="m-0">Ahorra con <b>RappiPrime</b></p>
+                        <b>No pagues mas costos de envío</b>
+                    </div>
+                </div>
+                <div class="w-100 p-4">
+                    <div>
+                        <p class="mb-2" style="color:#FF441F;font-size: 13px;">RappiCréditos disponibles</p>
+                        <div style="font-size: 16px;">S/ 0 RappiCréditos</div>
+                    </div>                    
+                </div>
+                <div class="w-100">
+                    <div class="menuList">Ajuste de cuenta</div>
+                    <div class="menuList">Pagos</div>
+                    <div class="menuList">Ingresar cupón</div>
+                    <div class="menuList">Centro de ayuda</div>
+                    <div class="menuList b">Cerrar sesión</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: rgba(0,0,0,0.15);">
+            <div class="section pt-5">
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section class="pb-4 text-center">
+                                <a href="" class="text-decoration-none " style="color:rgba(0,0,0,0.6);">
+                                    <h4 class="m-0 fs-6 fw-bold">
+                                        <span style="color:#0A66C2">Inglés - OFERTA ESPECIAL - </span>Mejora tu fluidez con Open English. Aprovecha ¡Es por tiempo limitado!
+                                    </h4>
+                                </a>
+                            </section>
+                        </div>
+                        
+                        <div class="col-md-8 col-sm-12 wTotal m-res">
+                            <div class="bg-white bordeCampos mb-2 position-relative d-flex" style="border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                <div class="row w-100 m-0">
+                                    <div class="col-md-4 p-0">
+                                        <div class="position-relative ">
+                                            <div class="d-flex align-items-center" style="border-bottom:1px solid #cdcfd2;height: 44px;">
+                                                <h5 class="ps-3 pe-3 m-0" style="flex-grow:1;font-size:1.1rem;">Mensajes</h5>
+                                                <a href="" class="text-decoration-none me-2" style="min-width: auto;background: transparent;color:rgba(0,0,0,0.6);">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                        <path d="M19 12h2v6a3 3 0 01-3 3H6a3 3 0 01-3-3V6a3 3 0 013-3h6v2H6a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1zm4-8a2.91 2.91 0 01-.87 2l-8.94 9L7 17l2-6.14 9-9A3 3 0 0123 4zm-4 2.35L17.64 5l-7.22 7.22 1.35 1.34z"></path>
+                                                    </svg>
+                                                </a>
+                                                <div class="me-2 position-relative" style="box-sizing: border-box;cursor: pointer;display: block;">
+                                                    <button class="border-0" style="min-width: auto;background: transparent;color:rgba(0,0,0,0.6);">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                            <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div class="" style="color:rgba(0,0,0,0.6);flex-shrink: 0;">
+                                                    <div class="" style="border-bottom: none;height: auto;background: transparent;top:0;left:0;width: 100%;backface-visibility:hidden;padding: 8px 12px;">
+                                                        <div class="position-relative">
+                                                            <input name="search" class="" style="border-radius:0.4rem;font-size: 0.9rem;width: 100%;border:none;padding: 4px 28px 4px 32px;background:#eef3f8;box-shadow: none;" placeholder="Buscar Mensaje" />
+                                                            <span class="position-absolute" style="left:7px;top:0px;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                                                    <path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <div class="position-absolute" style="top:0px;right:10px;">
+                                                                <button class="border-0 p-0" style="background: transparent;">
+                                                                    <span>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                                                                            <path d="M15 2v2H6.72a2 2 0 01-3.44 0H1V2h2.28a2 2 0 013.44 0H15zm-4 4a2 2 0 00-1.72 1H1v2h8.28a2 2 0 003.45 0H15V7h-2.28A2 2 0 0011 6zm-6 5a2 2 0 00-1.72 1H1v2h2.28a2 2 0 003.45 0H15v-2H6.72A2 2 0 005 11z"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="position-relative list-unstyled" style="flex:1;overflow-x: hidden;overflow-y: auto;overflow-x: auto;height: 60vh;">
+                                            <li class="d-block w-100 position-relative" style="min-height:92px;">
+                                                <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                                    <a href="" class="btnChat active d-flex text-decoration-none">
+                                                        <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                                            <div class="d-flex position-relative" style="width: 56px;height: 56px;">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHqTpE6UpiZXQ/profile-displayphoto-shrink_100_100/0/1617738789972?e=1624492800&v=beta&t=h9XxuqmTiDfN6ToxQRcNdNYellNJLkIa415Y6AITKkc" class="rounded-pill" />
+                                                                <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                                            <div class="h-100 d-flex flex-column">
+                                                                <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                                    <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Diana Zavaleta Espinoza</h4>
+                                                                    <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;">15:50</time>
+                                                                </div>
+                                                                <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                                    <div class="w-100" style="flex-grow: 1;">
+                                                                        <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                                            <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                                                
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="d-block w-100 position-relative" style="min-height:92px;">
+                                                <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                                    <a href="" class="btnChat d-flex text-decoration-none">
+                                                        <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                                            <div class="d-flex position-relative" style="width: 56px;height: 56px;">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFx160ip6EdLQ/profile-displayphoto-shrink_100_100/0/1517621204885?e=1624492800&v=beta&t=Nyj-gl0LtceVUzvVjS7jpfVVu52wFfVEIwJFxIE4RXE" class="rounded-pill" />
+                                                                <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                                            <div class="h-100 d-flex flex-column">
+                                                                <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                                    <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Diana Zavaleta Espinoza</h4>
+                                                                    <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;">15:50</time>
+                                                                </div>
+                                                                <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                                    <div class="w-100" style="flex-grow: 1;">
+                                                                        <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                                            <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                                                
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="d-block w-100 position-relative" style="min-height:92px;">
+                                                <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                                    <a href="" class="btnChat d-flex text-decoration-none">
+                                                        <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                                            <div class="d-flex position-relative" style="width: 56px;height: 56px;">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFx160ip6EdLQ/profile-displayphoto-shrink_100_100/0/1517621204885?e=1624492800&v=beta&t=Nyj-gl0LtceVUzvVjS7jpfVVu52wFfVEIwJFxIE4RXE" class="rounded-pill" />
+                                                                <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                                            <div class="h-100 d-flex flex-column">
+                                                                <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                                    <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Diana Zavaleta Espinoza</h4>
+                                                                    <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;">15:50</time>
+                                                                </div>
+                                                                <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                                    <div class="w-100" style="flex-grow: 1;">
+                                                                        <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                                            <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                                                
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="d-block w-100 position-relative" style="min-height:92px;">
+                                                <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                                    <a href="" class="btnChat d-flex text-decoration-none">
+                                                        <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                                            <div class="d-flex position-relative" style="width: 56px;height: 56px;">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFx160ip6EdLQ/profile-displayphoto-shrink_100_100/0/1517621204885?e=1624492800&v=beta&t=Nyj-gl0LtceVUzvVjS7jpfVVu52wFfVEIwJFxIE4RXE" class="rounded-pill" />
+                                                                <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                                            <div class="h-100 d-flex flex-column">
+                                                                <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                                    <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Diana Zavaleta Espinoza</h4>
+                                                                    <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;">15:50</time>
+                                                                </div>
+                                                                <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                                    <div class="w-100" style="flex-grow: 1;">
+                                                                        <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                                            <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                                                
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="d-block w-100 position-relative" style="min-height:92px;">
+                                                <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                                    <a href="" class="btnChat d-flex text-decoration-none">
+                                                        <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                                            <div class="d-flex position-relative" style="width: 56px;height: 56px;">
+                                                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFx160ip6EdLQ/profile-displayphoto-shrink_100_100/0/1517621204885?e=1624492800&v=beta&t=Nyj-gl0LtceVUzvVjS7jpfVVu52wFfVEIwJFxIE4RXE" class="rounded-pill" />
+                                                                <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                                            <div class="h-100 d-flex flex-column">
+                                                                <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                                    <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Diana Zavaleta Espinoza</h4>
+                                                                    <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;">15:50</time>
+                                                                </div>
+                                                                <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                                    <div class="w-100" style="flex-grow: 1;">
+                                                                        <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                                            <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                                                
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-8 p-0" style="border-left:1px solid #cdcfd2;">
+                                        <div class="position-relative d-flex flex-column" style="flex:0 0 492px;">
+                                            <div class="" style="height: 44px;flex-shrink: 0;">
+                                                <div class="h-100 d-flex align-items-center justify-content-between position-relative" style="padding: 0 12px;top:0;border-bottom: 1px solid #d6cec2;">
+                                                    <a class="d-flex align-items-center w-100 overflow-hidden text-decoration-none"> 
+                                                        <div class="d-flex align-items-center " style="flex-grow: 1;width: 100%;padding: 0 12px 0 0;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;">
+                                                            <dl class="m-0" style="display: table-cell;width:100%;vertical-align: middle;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;">
+                                                                <dl class="m-0 d-flex fw-600" style="padding:1px;">
+                                                                    <h4 class="m-0" style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;color:rgba(0,0,0,0.9);font-size: 13px;font-weight: 700;">Diana Zavaleta Espinoza</h4>
+                                                                </dl>
+                                                                <dd class="m-0" style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;color:rgba(0,0,0,0.6);font-size: 12px;">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="me-1 rounded-pill" style="border:2px solid #057642;width: 8px;height: 8px;background: #fff;flex-shrink: 0;box-sizing: border-box;"></div>
+                                                                        Movil 
+                                                                        <span class="ps-1 pe-1">•</span>
+                                                                        hace 1 hora
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </a>
+                                                    <div class="d-block m-0 p-0 position-relative" style="box-sizing: border-box;cursor: pointer;">
+                                                        <button class="border-0 " style="background: transparent;min-width: auto;color:rgba(0,0,0,0.6);">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="position-relative d-flex" style="flex-direction: column;flex:1 0 0px;margin-top: auto;">
+                                                <div class="d-flex flex-column justify-content-start w-100" style="flex-grow: 1;overflow-y: scroll;height: 45vh;">
+                                                    <ul class="list-unstyled m-0 p-0 pt-3 w-100" style="height: auto;">
+                                                        <li>
+                                                            <div class="ps-3 pe-3">
+                                                                <div class="d-block" style="word-wrap:break-word;word-break: break-word;">
+                                                                    <a href="">
+                                                                        <div class="d-block position-relative" style="flex-shrink:0;">
+                                                                            <div class="d-flex position-relative" style="width: 72px;height:72px;">
+                                                                                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHqTpE6UpiZXQ/profile-displayphoto-shrink_100_100/0/1617738789972?e=1624492800&v=beta&t=h9XxuqmTiDfN6ToxQRcNdNYellNJLkIa415Y6AITKkc" class="w-100 rounded-pill" />
+                                                                                <div class="position-absolute rounded-pill" style="border:4px solid #057642;width: 16px;height: 16px;bottom: 0;right: 0;box-shadow: 0 0 0 2px #fff;"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="d-block position-relative pt-2">
+                                                                        <div class="m-0 d-inline-flex fw-600" style="font-size: 15px;line-height: 1.5;color:#000;">
+                                                                            <a href="" class="text-decoration-none" style="color:#000;">
+                                                                                Diana Zavaleta Espinoza
+                                                                            </a>
+                                                                            <span> · 1er</span>
+                                                                        </div>
+                                                                        <div class="overflow-hidden " style="text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">
+                                                                            <div style="font-size: 14px;">
+                                                                                Practicante Profesional FARES en Pontificia Universidad Católica del Perú
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <time class="p-0 w-100 position-relative text-center" style="margin:8px 0px;text-transform: uppercase;letter-spacing:1px;clear: both;color:rgba(0,0,0,0.6);">
+                                                                <div class="row m-0 mt-1 mb-1">
+                                                                    <div class="col-md-5 p-0">
+                                                                        <div class="h-100 d-flex align-items-center justify-content-center">
+                                                                            <div class="" style="width: 100%;height: 1px;background: rgba(0,0,0,0.08);"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="w-100 text-center" style="font-size: 13px;">6 abr</div>
+                                                                    </div>
+                                                                    <div class="col-md-5 p-0">
+                                                                        <div class="h-100 d-flex align-items-center justify-content-center">
+                                                                            <div class="" style="width: 100%;height: 1px;background: rgba(0,0,0,0.08);"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </time>
+                                                            <div class="mb-3 d-flex flex-column w-100 position-relative m-0 p-0" style="box-sizing: border-box;">
+                                                                <a href="" class="position-absolute" style="left: 8px;z-index: 1;">
+                                                                    <img src="img/none.png" class="rounded-pill" style="width: 40px;" />
+                                                                </a>
+                                                                <div class="mb-1" style="padding-left:56px;">
+                                                                    <a href="" class="text-decoration-none fw-600" style="color:#000;font-size: 14px;">
+                                                                        Lorem ipsum dolor sit
+                                                                    </a>
+                                                                    <time class="ms-1" style="font-size: 12px;"> • 14:37</time>
+                                                                </div>
+                                                                <div class="d-inline-block w-100 p-0 position-relative">
+                                                                    <p style="margin: 0px 0 0px 56px;font-size: 13px;color: rgba(0,0,0,0.9);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum delectus, perferendis sit mollitia eum dignissimos placeat reiciendis.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <time class="p-0 w-100 position-relative text-center" style="margin:8px 0px;text-transform: uppercase;letter-spacing:1px;clear: both;color:rgba(0,0,0,0.6);">
+                                                                <div class="row m-0 mt-1 mb-1">
+                                                                    <div class="col-md-5 p-0">
+                                                                        <div class="h-100 d-flex align-items-center justify-content-center">
+                                                                            <div class="" style="width: 100%;height: 1px;background: rgba(0,0,0,0.08);"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="w-100 text-center" style="font-size: 13px;">8 abr</div>
+                                                                    </div>
+                                                                    <div class="col-md-5 p-0">
+                                                                        <div class="h-100 d-flex align-items-center justify-content-center">
+                                                                            <div class="" style="width: 100%;height: 1px;background: rgba(0,0,0,0.08);"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </time>
+                                                            <div class="mb-3 d-flex flex-column w-100 position-relative m-0 p-0" style="box-sizing: border-box;">
+                                                                <a href="" class="position-absolute" style="left: 8px;z-index: 1;">
+                                                                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHqTpE6UpiZXQ/profile-displayphoto-shrink_100_100/0/1617738789972?e=1624492800&v=beta&t=h9XxuqmTiDfN6ToxQRcNdNYellNJLkIa415Y6AITKkc" class="rounded-pill" style="width: 40px;" />
+                                                                </a>
+                                                                <div class="mb-1" style="padding-left:56px;">
+                                                                    <a href="" class="text-decoration-none fw-600" style="color:#000;font-size: 14px;">
+                                                                        Lorem ipsum dolor sit
+                                                                    </a>
+                                                                    <time class="ms-1" style="font-size: 12px;"> • 10:14</time>
+                                                                </div>
+                                                                <div class="d-inline-block w-100 p-0 position-relative">
+                                                                    <p style="margin: 0px 0 0px 56px;font-size: 13px;color: rgba(0,0,0,0.9);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="mb-3 d-flex flex-column w-100 position-relative m-0 p-0" style="box-sizing: border-box;">
+                                                                <a href="" class="position-absolute" style="left: 8px;z-index: 1;">
+                                                                    <img src="img/none.png" class="rounded-pill" style="width: 40px;" />
+                                                                </a>
+                                                                <div class="mb-1" style="padding-left:56px;">
+                                                                    <a href="" class="text-decoration-none fw-600" style="color:#000;font-size: 14px;">
+                                                                        Lorem ipsum dolor sit
+                                                                    </a>
+                                                                    <time class="ms-1" style="font-size: 12px;"> • 10:14</time>
+                                                                </div>
+                                                                <div class="d-inline-block w-100 p-0 position-relative">
+                                                                    <p style="margin: 0px 0 0px 56px;font-size: 13px;color: rgba(0,0,0,0.9);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatum aut consequatur.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <form class="bg-white d-flex flex-column position-static w-100" style="flex:0 0 auto;max-height: 100%;">
+                                                <div class="d-flex flex-column" style="flex:1 1 auto;max-height: 100%;overflow: hidden;position: relative;border-top: 1px solid rgba(0,0,0,0.08);">
+                                                    <div class="d-flex flex-column h-100 position-relative" style="max-height: 200px;flex-grow: 1;overflow: auto;">
+                                                        <div class="position-relative" style="flex-grow: 1;">
+                                                            <textarea class="w-100 h-100 border-0" style="padding:10px 50px 10px 10px;resize: none;outline:0px;" placeholder="Escribe un mensaje"></textarea>
+                                                            <button class="position-absolute border-0" style="top:5px;right:10px;background: transparent;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                    <path d="M22 17L12 9.5 2 17v-2.5L12 7l10 7.5z"></path>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <footer class="d-flex justify-content-between align-items-center" style="padding-bottom: 48px;background: #f9fafb;border-top:1px solid rgba(0,0,0,0.08);margin-top:auto;padding:4px 8px;">
+                                                    <div class="d-flex">
+                                                        <div class="d-inline-block">
+                                                            <button class="m-0 p-0 border-0 d-inline-flex align-items-center justify-content-center text-center overflow-hidden" style="width: 2.5rem;height: 2rem;min-width: auto;background: transparent;color:rgba(0,0,0,0.6);">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                        <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="d-inline-block">
+                                                            <button class="m-0 p-0 border-0 d-inline-flex align-items-center justify-content-center text-center overflow-hidden" style="width: 2.5rem;height: 2rem;min-width: auto;background: transparent;color:rgba(0,0,0,0.6);">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                        <path d="M20.54 10.53L14.12 17A3 3 0 019 14.84a3 3 0 01.88-2.13L15.61 7 17 8.41l-5.71 5.71a1 1 0 00.71 1.71 1 1 0 00.71-.29l6.41-6.42a3 3 0 10-4.24-4.24l-10 10a3 3 0 104.24 4.24l.71-.7 1.41 1.41-.71.71a5 5 0 01-7.07-7.07l10-10a5 5 0 017.07 7.07z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="d-inline-block">
+                                                            <button class="m-0 p-0 border-0 d-inline-flex align-items-center justify-content-center text-center overflow-hidden" style="width: 2.5rem;height: 2rem;min-width: auto;background: transparent;color:rgba(0,0,0,0.6);">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                        <path d="M12 6h2v12h-2zm11 2V6h-7v12h2v-4h4v-2h-4V8zM6.5 6h-1A3.5 3.5 0 002 9.5v5A3.5 3.5 0 005.5 18H6a2.55 2.55 0 002.35-1l.15 1H10v-6H6v2h2v.5A1.5 1.5 0 016.5 16h-1A1.5 1.5 0 014 14.5v-5A1.5 1.5 0 015.5 8h1A1.5 1.5 0 018 9.5v.5h2v-.5A3.5 3.5 0 006.5 6z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="d-inline-block">
+                                                            <button class="m-0 p-0 border-0 d-inline-flex align-items-center justify-content-center text-center overflow-hidden" style="width: 2.5rem;height: 2rem;min-width: auto;background: transparent;color:rgba(0,0,0,0.6);">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                        <path d="M8 10.5A1.5 1.5 0 119.5 12 1.5 1.5 0 018 10.5zm6.5 1.5a1.5 1.5 0 10-1.5-1.5 1.5 1.5 0 001.5 1.5zm7.5 0A10 10 0 1112 2a10 10 0 0110 10zm-2 0a8 8 0 10-8 8 8 8 0 008-8zm-8 4a6 6 0 01-4.24-1.76l-.71.76a7 7 0 009.89 0l-.71-.71A6 6 0 0112 16z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="d-inline-block">
+                                                            <button class="m-0 p-0 border-0 d-inline-flex align-items-center justify-content-center text-center overflow-hidden" style="width: 2.5rem;height: 2rem;min-width: auto;background: transparent;color:rgba(0,0,0,0.6);">
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                        <path d="M2 8v8a3 3 0 003 3h13V5H5a3 3 0 00-3 3zm4 3h3V8h2v3h3v2h-3v3H9v-3H6zm17-4v10h-2l-2-1V8l2-1z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center ">
+                                                        <div>
+                                                            <button class="border-0 d-inline-flex align-items-center justify-content-center overflow-hidden fw-500" style="background: transparent;border-radius: 1.6rem;padding: 0 10px;background: #0a66c2;color: #fff;font-size: 16px;">
+                                                                Enviar
+                                                            </button>
+                                                        </div>
+                                                        <div class="position-relative ms-2">
+                                                            <span class="position-relative">
+                                                                <button class="border-0" style="background: transparent;height: 2rem;width: 2.5rem;min-width: auto;color: rgba(0,0,0,0.6);">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                                                        <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </footer>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 wTotal resOcul">
+                            <div class="bg-white bordeCampos p-2 mb-2 position-relative d-flex" style="border-radius: 15px;color: rgba(0,0,0,0.7);">
+                                <img src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg" class="w-100 ">
+                            </div>
+                            <footer class="mt-2" style="background: transparent;font-size: 11px;">
+                                <ul class="d-flex flex-wrap align-items-center justify-content-center list-unstyled">
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Acerca</a></li>
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Accesibilidad</a></li>
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Centro de ayuda</a></li>
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Privacidad y términos</a></li>
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Opciones de publicidad</a></li>
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Publicidad</a></li>
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Servicios Empresariales</a></li>
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Descarga la aplicación de LinkedIn</a></li>
+                                    <li class="d-flex ms-2 me-2"><a href="" class="text-decoration-none" style="color: rgba(0,0,0,0.6);">Más</a></li>
+                                </ul>
+                                <div class="m-3 text-center" style="font-weight: 300;font-size: 13px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 14" data-supported-dps="56x14" fill="#0a66c2" class="mercado-match" width="56" height="14" focusable="false">
+                                        <g>
+                                            <path class="background-mercado" d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z"></path>
+                                        </g>
+                                    </svg>
+                                    <span>LinkedIn Corporation © 2021</span>
+                                </div>
+                            </footer>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="campoChats position-fixed bg-white" style="bottom: 0;right: 0;z-index: 1000;box-shadow: 0 4px 12px rgba(0,0,0,0.3);border-radius: 0.8rem 0.8rem 0 0;transform: translateY(100%) translateY(-48px);transition: linear .3s;">
+            <div class="d-flex flex-column" style="height: 50px;flex:0 0 288px;width: 288px;background: #fff;border-radius: 0.8rem 0.8rem 0 0;">
+                <div class="d-flex align-items-center justify-content-center position-relative" style="flex-direction:row;padding: 0 8px;min-height: 48px;cursor: pointer;background-clip:padding-box">
+                    <section class="d-flex position-relative" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-right:4px;padding: 4px 4px 4px 1px;">
+                        <div class="d-flex position-relative" style="width: 32px;height:32px;">
+                            <img src="img/none.png" class="w-100 rounded-pill" />
+                            <div class="position-absolute rounded-pill" style="background: #057642;bottom: 0;right:0;width: 8px; height:8px;"></div>
+                        </div>
+                        <button class="ms-2 border-0 p-0" style="background: transparent;">
+                            <h4 class="m-0" style="font-size: 15px;">Mensajes</h4>
+                        </button>
+                    </section>
+                    <section class="position-relative d-flex " style="margin-left:auto;flex-shrink:0;opacity: 1;vertical-align: baseline;">
+                        <button class="btnMen border-0 p-0 rounded-pill d-inline-flex align-items-center justify-content-center overflow-hidden">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="btnMen border-0 p-0 rounded-pill d-inline-flex align-items-center justify-content-center overflow-hidden">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="btnTop btnMen border-0 p-0 rounded-pill align-items-center justify-content-center overflow-hidden" style="display: inline-flex;">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="btnBot btnMen border-0 p-0 rounded-pill align-items-center justify-content-center overflow-hidden" style="display: none;">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </section>
+                </div>
+            </div>
+            <div class="d-block" style="background:#fff;border-top: 1px solid rgba(0,0,0,0.08);width: 288px;">
+                <div class="d-flex flex-column w-100">
+                    <div class="position-relative" style="margin: 8px 10px;">
+                        <input name="search" class="" style="border-radius:0.4rem;font-size: 0.9rem;width: 100%;border:none;padding: 4px 28px 4px 32px;background:#eef3f8;box-shadow: none;" placeholder="Buscar Mensaje" />
+                        <span class="position-absolute" style="left:7px;top:0px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="rgba(0,0,0,0.6)" class="mercado-match" width="16" height="16" focusable="false">
+                                <path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+                            </svg>
+                        </span>
+                        <div class="position-absolute" style="top:0px;right:10px;">
+                            <button class="border-0 p-0" style="background: transparent;">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="rgba(0,0,0,0.6)" width="16" height="16" focusable="false">
+                                        <path d="M15 2v2H6.72a2 2 0 01-3.44 0H1V2h2.28a2 2 0 013.44 0H15zm-4 4a2 2 0 00-1.72 1H1v2h8.28a2 2 0 003.45 0H15V7h-2.28A2 2 0 0011 6zm-6 5a2 2 0 00-1.72 1H1v2h2.28a2 2 0 003.45 0H15v-2H6.72A2 2 0 005 11z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="position-relative list-unstyled m-0" style="flex:1;overflow-y: auto;height: 60vh;">
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHqTpE6UpiZXQ/profile-displayphoto-shrink_100_100/0/1617738789972?e=1624492800&v=beta&t=h9XxuqmTiDfN6ToxQRcNdNYellNJLkIa415Y6AITKkc" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFx160ip6EdLQ/profile-displayphoto-shrink_100_100/0/1517621204885?e=1624492800&v=beta&t=Nyj-gl0LtceVUzvVjS7jpfVVu52wFfVEIwJFxIE4RXE" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">SONIA GOMEZ GUTIERREZ</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C560CAQHDkc6XVR3aeA/spinmail-customsender-displayphoto-shrink_100_100/0/1589235600844?e=1619301600&v=beta&t=t3A7MNov_pLe9RxHMJ9-UZ5teiFrkMHvtsAKeaDS5Dw" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C560CAQHDkc6XVR3aeA/spinmail-customsender-displayphoto-shrink_100_100/0/1589235600844?e=1619301600&v=beta&t=t3A7MNov_pLe9RxHMJ9-UZ5teiFrkMHvtsAKeaDS5Dw" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C560CAQHDkc6XVR3aeA/spinmail-customsender-displayphoto-shrink_100_100/0/1589235600844?e=1619301600&v=beta&t=t3A7MNov_pLe9RxHMJ9-UZ5teiFrkMHvtsAKeaDS5Dw" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="d-block w-100 position-relative" style="min-height:92px;">
+                            <div class="position-relative overflow-hidden" style="cursor:pointer;left:0;min-height: 92px;">
+                                <a href="" class="btnChat d-flex text-decoration-none">
+                                    <div class="d-flex justify-content-center align-items-center" style="min-width: 56px;">
+                                        <div class="d-flex position-relative" style="width: 50px;height: 50px;">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C560CAQHDkc6XVR3aeA/spinmail-customsender-displayphoto-shrink_100_100/0/1589235600844?e=1619301600&v=beta&t=t3A7MNov_pLe9RxHMJ9-UZ5teiFrkMHvtsAKeaDS5Dw" class="rounded-pill" />
+                                            <div class="position-absolute rounded-pill" style="width: 12px;height: 12px;border:2px solid #057642;bottom: 2px;right: 2px;background: #fff;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="" style="height: 92px;padding: 12px 8px;border-bottom: 1px solid #e9e5df;overflow:hidden;flex-grow: 1;">
+                                        <div class="h-100 d-flex flex-column">
+                                            <div class="align-items-center d-flex" style="padding-right: 8px;">
+                                                <h4 class="fw-400 m-0" style="font-size: 15px;flex:1;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;padding-right: 4px;">Guzmán @ LinkedIn Learning</h4>
+                                                <time class="d-inline-block" style="flex:0 0 auto;margin-right: auto;overflow:hidden;font-size: 12px;">22 sep 2020</time>
+                                            </div>
+                                            <div class="d-flex" style="flex-grow: 1;padding-right: 8px;">
+                                                <div class="w-100" style="flex-grow: 1;">
+                                                    <p class="m-0" style="overflow:hidden;text-overflow: ellipsis;max-height: 2.5rem;line-height: 1.42857;font-size: 13px;">
+                                                        <span style="text-overflow: ellipsis;overflow:hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet odit numquam cum vero sunt iusto.</span>
+                                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
